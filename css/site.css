@@ -1,0 +1,19 @@
+body {
+  font-family: "Crimson Text", serif;
+  background-color: #F2FFFC;
+}
+
+h1, h2 {
+  /*Se não achar a primeira ele usa a outra*/
+  font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  background-color: #851944;
+  color: #FFF;
+}
+
+p {
+  text-align: justify;
+}
