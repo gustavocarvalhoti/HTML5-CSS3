@@ -28,6 +28,7 @@ Assim, se queremos que nossas páginas sejam acessíveis por todos, a codificaç
 <aside>       - Conteúdo auxiliar ao conteúdo principal, como links relacionados ao conteúdo
 <article>     - Conteúdo que, por si só, já tem um sentido completo, como um post de um blog ou uma notícia
 <section>     - Parte/seção de uma página ou texto
+<article>     - Artigo
 
 
 **********************************************************************************************************************************
@@ -41,6 +42,11 @@ Assim, se queremos que nossas páginas sejam acessíveis por todos, a codificaç
 &gt;>     >
 
 **********************************************************************************************************************************
+#Assumir o valor do Pai
+<ul><li><a href="#">Link 1</a></li></ul>
+ul { color: pink;}
+ul li a { color: inherit; }
+
 **********************************************************************************************************************************
 **********************************************************************************************************************************
 **********************************************************************************************************************************
