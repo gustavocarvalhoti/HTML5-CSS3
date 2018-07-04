@@ -18,6 +18,14 @@ Assim, se queremos que nossas páginas sejam acessíveis por todos, a codificaç
 <!-- que é a única necessária para os cabeçalhos            -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
 
+#Reset
+Reseta os arquivos de css default do navegador para utilizar somento os que inserimos
+<link rel="stylesheet" href="reset.css">  <- Eric Meyer
+OU
+http://necolas.github.io/normalize.css/
+<-  O Normalize não apenas remove o estilo padrão do navegador
+como também define alguns estilos úteis, como tamanhos de fontes para cabeçalhos e estilos de fontes para elementos <em> e <strong>
+
 **********************************************************************************************************************************
 #Tags
 <blockquote>  - Citação
@@ -48,6 +56,58 @@ ul { color: pink;}
 ul li a { color: inherit; }
 
 **********************************************************************************************************************************
+#CSS
+#Altera o css da tag
+h1, h2 {
+  font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+#Bordas
+border: 10px solid #C2CCCA;
+solid, dotted, dashed, double, groove, ridge, inset, outset
+#Tamanho 250px considerando as bordas
+blockquote {
+    padding: 16px;
+    margin: 0;
+    border: 10px solid #C2CCCA;
+    width: 250px;
+    box-sizing: border-box;
+}
+
+line-height: 1.5; -> Aumenta o tamanho da linha em relação ao texto,
+se a fonte tiver o tamanho de 20 pixels, a linha terá o tamanho de 30 pixels.
+
+#Inline - Fica um ao lado do outro - Não consegue definir o tamanho
+aside li {
+  display: inline;
+}
+#Inline Block - Fica um ao lado do outro - Não consegue definir o tamanho
+aside li {
+  display: inline-block;
+  height: 90px;
+}
+
+#Aplica para todos os elementos
+* {
+    display: inline;
+}
+
+#Displays
+display: inline;  <- Na linha
+display: none;    <- Some
+display: block;   <- Pega aquele bloco, a linha toda
+
+#Podemos dar mais de uma classe para um elemento
+<header class="pagina-inicial cabecalho-principal">
+.pagina-inicial {
+    font-size: 60px;
+}
+.cabecalho-principal {
+    color: white;
+    background-color: purple;
+}
+
+
 **********************************************************************************************************************************
 **********************************************************************************************************************************
 **********************************************************************************************************************************

@@ -1,17 +1,35 @@
+/* TAGS */
 body {
   font-family: "Crimson Text", "Times New Roman", serif;
   background-color: #F2FFFC;
   font-size: 120%;
+  line-height: 1.5;
 }
 
-h1, h2 {
-  font-family: "Open Sans Condensed", "Arial", sans-serif;
+div, aside, footer, main {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+h1 {
+  font-size: 100%;
+  color: red;
+  padding: 24px;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 main h1 {
   text-align: center;
   background-color: #851944;
   color: #FFF;
+  border-bottom: 10px solid black;
 }
 
 p {
@@ -19,7 +37,12 @@ p {
 }
 
 blockquote {
-  background-color: #D9E5E3;
+  padding: 16px;
+  margin: 0;
+  border: 10px solid #C2CCCA;
+  width: 250px;
+  /*Mede a partir das bordas*/
+  box-sizing: border-box;
 }
 
 aside {
@@ -34,6 +57,10 @@ aside a {
   text-decoration: none;
 }
 
+blockquote {
+  padding: 16px;
+}
+
 footer {
   background-color: #000;
   color: #F2FFFC;
@@ -41,4 +68,78 @@ footer {
 
 nav a {
   color: #F2FFFC;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+article {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* CLASSES */
+.div-triangulo {
+  margin-top: 15px;
+  border-bottom: 30px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  width: 0;
+}
+
+.div-pausar {
+  margin-top: 15px;
+  border-left: 10px solid red;
+  border-right: 10px solid red;
+  width: 5px;
+  height: 30px;
+}
+
+.div-gravata {
+  margin-top: 15px;
+  border-left: 30px solid #851944;
+  border-bottom: 30px solid transparent;
+  border-top: 30px solid transparent;
+  border-right: 30px solid red;
+  width: 0;
+}
+
+.div-triangulo-reto {
+  margin-top: 15px;
+  border-left: 30px solid aqua;
+  border-bottom: 30px solid black;
+  border-top: 30px solid green;
+  border-right: 30px solid yellow;
+  width: 0;
+}
+
+.icones-sociais li {
+  display: inline-block;
+  height: 90px;
+}
+
+.navegacao-site {
+  background-color: #3C1D3D;
+  color: #F2FFFC;
+  padding: 20px;
+  text-align: center;
+}
+
+/* IDs */
+#rodape-pagina {
+  background-color: #000;
+  color: #F2FFFC;
+  padding: 20px;
+}
+
+.leia-mais {
+  padding: 0 10px;
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  background-color: #E6E7E8;
+  box-sizing: content-box;
+  width: 100%;
 }
