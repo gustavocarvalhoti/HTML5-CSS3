@@ -26,6 +26,12 @@ http://necolas.github.io/normalize.css/
 <-  O Normalize não apenas remove o estilo padrão do navegador
 como também define alguns estilos úteis, como tamanhos de fontes para cabeçalhos e estilos de fontes para elementos <em> e <strong>
 
+#Utilizar text-transform: uppercase para os deficientes visuais intenderem a página
+#O ChromeVox lê a página
+h1 {
+    text-transform: uppercase;
+}
+
 **********************************************************************************************************************************
 #Tags
 <blockquote>  - Citação

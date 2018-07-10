@@ -17,12 +17,7 @@ h1 {
   font-size: 100%;
   color: red;
   padding: 24px;
-  font-size: 30px;
-}
-
-h1 {
-  font-size: 30px;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
 main h1 {
@@ -142,4 +137,29 @@ article {
   background-color: #E6E7E8;
   box-sizing: content-box;
   width: 100%;
+}
+
+/*GERAL*/
+.icones-sociais a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  /*
+  Altera somente o texto,
+  da para jogar para a (+)direita ou (-)esquerda
+  */
+  text-indent: -99999px;
+}
+
+/*POR ICONE*/
+.github {
+  background-image: url(../img/github.png);
+}
+
+.twitter {
+  background-image: url(../img/twitter.png);
+}
+
+.linkedin {
+  background-image: url(../img/linkedin.png);
 }

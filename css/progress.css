@@ -1,0 +1,27 @@
+*, *:before, *:after {
+  box-sizing: border-box
+}
+
+body {
+  background: silver;
+}
+
+progress {
+  width: 50%;
+}
+
+.progress {
+  margin-top: 50px;
+  width: 50%;
+  height: 20px;
+  background: black;
+}
+
+.progress .status {
+  background: white;
+  float: left;
+  height: 100%;
+  padding-left: 5px;
+  font-size: 12px;
+  line-height: 1.8
+}
