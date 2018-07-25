@@ -5,8 +5,13 @@ body {
   line-height: 1.5;
 }
 
-h1, h2 {
+h1, h2, .subtitulo-principal {
   font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 60px;
 }
 
 .titulo-principal {
@@ -14,33 +19,11 @@ h1, h2 {
   background-color: #851944;
   color: #FFF;
   padding: 25px;
-  border-bottom: 10px solid black;
-  font-size: 60px;
-  text-transform: uppercase;
+  border-bottom: 10px solid #000;
 }
 
-p {
-  text-align: justify;
-  margin: 20px 0;
-}
-
-.citacao-bio {
-  background-color: #D9E5E3;
-  border: 10px solid #C2CCCA;
-  width: 250px;
-  box-sizing: border-box;
-  margin: 20px 40px;
-}
-
-.navegacao-site {
-  text-align: center;
-  background-color: #3C1D3D;
-  color: #F2FFFC;
-}
-
-.rodape-pagina {
-  background-color: #000;
-  color: #F2FFFC;
+.subtitulo-texto {
+  font-size: 30px;
   clear: both;
 }
 
@@ -48,24 +31,46 @@ main a {
   color: #851944;
 }
 
-.navegacao-site a {
-  color: inherit;
-  font-family: "Open Sans Condensed", sans-serif;
+main p {
+  text-align: justify;
+  margin: 20px 0;
 }
 
-.citacao-bio, .navegacao-site, .rodape-pagina {
+.navegacao-site {
+  text-align: center;
+  background-color: #3C1D3D;
+  color: #F2FFFC;
   padding: 20px;
 }
 
-.container {
-  width: 720px;
-  margin: auto;
-  padding: 30px 0;
+.navegacao-site a {
+  color: inherit;
+  font-family: "Open Sans Condensed", "Arial", sans-serif;
+  text-transform: lowercase;
 }
 
 .navegacao-site h1 {
   font-size: 30px;
   margin-bottom: 25px;
+}
+
+.rodape-pagina {
+  background-color: #000;
+  color: #F2FFFC;
+  padding: 20px;
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0;
 }
 
 strong {
@@ -76,32 +81,8 @@ em {
   font-style: italic;
 }
 
-.subtitulo-texto {
-  font-size: 30px;
-  clear: both;
-}
-
 .icones-redes-sociais li {
   display: inline-block;
-}
-
-.artigo {
-  padding-bottom: 30px;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 20px;
-}
-
-.leia-mais {
-  padding: 8px;
-  margin: 16px;
-  display: block;
-  font-size: 24px;
-  text-align: center;
-  background-color: #E6E7E8;
-}
-
-nav a {
-  text-transform: lowercase;
 }
 
 .icones-redes-sociais a {
@@ -123,45 +104,29 @@ nav a {
   background-image: url(../img/linkedin.png);
 }
 
-.fiat {
-  float: right;
-}
-
-.petrobras {
-  float: left;
-}
-
 main {
+  width: 80%;
   float: left;
-  width: 85%;
   padding-bottom: 80px;
 }
 
-.minha-foto, .navegacao-site {
-  float: right;
-  width: 15%;
-  box-sizing: border-box;
+.minha-foto,
+.navegacao-site {
   border-left: 10px solid black;
   border-bottom: 10px solid black;
-}
-
-cite {
-  font-style: italic;
-  float: right;
-}
-
-img {
-  width: 300px;
-  position: relative;
-  top: 0px;
-  right: 0px;
-}
-
-/*Coloca o rodapé fixo na tela*/
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   box-sizing: border-box;
+}
+
+.navegacao-site {
+  width: 20%;
+  float: right;
+  position: relative;
+  top: 300px;
+}
+
+.minha-foto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 300px;
 }
