@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Radius</title>
+  <style type="text/css">
+    div {
+      /*
+      Raio de aredondamento
+      100px 0 -> (ESQUERDA CIMA = DIREITA BAIXO) X (DIR CIMA = ESQUERDA BAIXO)
+      100px 0 0 100px -> (ESQUERDA/DIREITA CIMA) X (DIREITA/ESQUERDA BAIXO)
+      Google Chrome: -webkit-
+      Mozilla Firefox: -moz-
+      Internet Explorer: -ms-
+      Opera: -o- AGORA -webkit-
+      Safari: -webkit-
+      UM IGNORA O OUTRO
+      */
+      /*
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 100px 50px 0 100px;
+      border-top-left-radius: 100px;
+      */
+      border-radius: 10% 50% / 50% 10%;
+      background-color: red;
+      /*Metade da largura da tela menos 10 px*/
+      width: calc(50% - 10px);
+      height: 300px;
+      margin: 50px auto;
+    }
+  </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
