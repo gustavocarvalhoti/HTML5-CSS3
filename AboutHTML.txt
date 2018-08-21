@@ -223,16 +223,143 @@ header {
 border-radius: 100px 50px 0 100px;
 
 **********************************************************************************************************************************
-#Transformações geométricas usando CSS3
-perpective -> distancia da tela
+#Sombras e opacidade
+#Sombra no testo
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 5px 5px #000;
+}
+
+#Sombra na imagem
+.foto-home {
+  height: 200px;
+  box-shadow: 0 0 1em #000;
+}
+
+#Sombra interna e externa
+box-shadow: 0 0 1em #000, inset 0 0 .5em #FFF;
+
+#Podemos separa por virgula para colocar duas
+#direita + baixo, esquerda + alto
+box-shadow: 10px 10px black, -10px -10px orange;
+
+#5 Bordas - Precisa aumentar o tamanho 4,8,12...
+box-shadow: 0 0 0 4px black,
+            0 0 0 8px blue,
+            0 0 0 12px black,
+            0 0 0 16px blue,
+            0 0 0 20px black;
+
+#Deixa transparente*/
+.acessibilidade {
+  opacity: .3;
+}
+background-color: rgba(0, 0, 0, 0.8);
 
 
 **********************************************************************************************************************************
+#Div centralizado
+width: calc(50% - 10px);
+height: 300px;
+margin: 50px auto;
+
 **********************************************************************************************************************************
+#Efeito modal
+.modal-top {
+  width: calc(50% - 10px);
+  height: 300px;
+  margin: 0 auto;
+  background-color: rebeccapurple;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10% 3%;
+  text-align: center;
+  font-size: 2em;
+  box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+}
+<div class="modal-top">
+  OI
+</div>
+
 **********************************************************************************************************************************
+#Gradientes - Efeito de escurecimento
+.titulo-principal {
+  position: relative;
+  background-image: linear-gradient(to bottom, #F00, #000);
+}
+#Da esquerda para a direita descendo
+background-image: linear-gradient(to bottom right, white, red, black);
+#Da esquerda para a direita
+background-image: linear-gradient(to right, white, red, black);
+#Gradual
+background-image: linear-gradient(to bottom, black, blue 80%, brown);
+#Radial
+background-image: radial-gradient(yellow, red);
+
 **********************************************************************************************************************************
+#Conhecendo outros seletores do CSS - Selecionar os elementos para aplicar estilos neles
+#Do segundo li para baixo
+li ~ li {
+  background-color: blue;
+}
+#Do terceiro li para baixo
+li ~ li ~ li{
+  background-color: red;
+}
+
+#O primeiro paragrafo após uma img será purple (Se tiver div não funciona)
+img + p {
+  color: purple;
+}
+
+#Todos os paragrafos dentro da div
+div > p {
+  color: red;
+}
+
+#Todos os paragrafos dentro da div
+div > p + p {
+  color: yellow;
+}
+
+#Todos os ha dentro da div e o <p> após a div é aqua
+div > h1 + p {
+  color: aqua;
+}
+
+#Conseguimos selecionar por qualquer outro atributo usando essa sintaxe
+<a href="http://www.alura.com.br">
+[href="http://www.alura.com.br"] { <- Especifico
+  border: black 1px dashed;
+}
+[src$=".jpg"] { <- Selecionar todas as imagens com a extensão .jpg
+  border: black 1px dashed;
+}
+[href^="http://"] { <- Se quisermos selecionar todos os links que começam com http://
+border: black 1px dashed;
+}
+
 **********************************************************************************************************************************
+#Pseudoclasses    - O vavegador coloca
+:nth-child(odd)   - linhas ímpares;
+:nth-child(even)  - linhas pares;
+:nth-child(3)     - terceira linha;
+:first-child      - primeira linha;
+:last-child       - última linha.
+tr:nth-child(odd) {
+  background-color: red;
+}
+
 **********************************************************************************************************************************
+#Focar nesse e apagar os outros
+.citacao-bio:hover {
+  box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+
 **********************************************************************************************************************************
 **********************************************************************************************************************************
 **********************************************************************************************************************************
