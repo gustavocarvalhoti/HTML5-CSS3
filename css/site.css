@@ -3,6 +3,8 @@ body {
     background-color: #F2FFFC;
     font-size: 120%;
     line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1,
@@ -128,28 +130,54 @@ em {
 }
 
 main {
-    width: 80%;
-    float: left;
     padding-bottom: 4em;
+    flex-grow: 1;
 }
 
 .minha-foto,
 .navegacao-site {
     border-left: .5em solid black;
-    border-bottom: .5em solid black;
     box-sizing: border-box;
 }
 
 .navegacao-site {
-    width: 20%;
-    float: right;
-    position: relative;
-    top: 300px;
+    width: calc(0.9 * 300px);
+    padding-top: calc(300px + 1em);
 }
 
 .minha-foto {
+    border-bottom: .5em solid black;
     position: absolute;
     top: 0;
     right: 0;
     height: 300px;
+}
+
+.icones-redes-sociais a {
+    position: relative;
+}
+
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: black;
+    color: white;
+    top: 100%;
+    width: 300%;
+    right: 0;
+    text-indent: 0;
+    font-size: .75em;
+}
+
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    transform: translateY(.5em) rotate(45deg);
 }
