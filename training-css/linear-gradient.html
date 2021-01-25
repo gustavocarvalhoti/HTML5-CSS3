@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+    <style>
+        body {
+            height: calc(100vh - 30px);
+            background: linear-gradient(black 60%, #888899);
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            text-shadow: 2px 2px #9999AA;
+        }
+
+        /*
+        h2:first-letter {
+            text-transform: uppercase;
+        }
+        */
+
+        h2:first-line {
+            text-transform: uppercase;
+        }
+
+        h2:before {
+            content: "[ ";
+        }
+
+        h2:after {
+            content: " ]";
+        }
+
+        div:first-child {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        img {
+            height: 300px;
+            float: left;
+            box-shadow: inset 0 0 10px greenyellow; /*Sombra interna*/
+        }
+
+        .img-02 {
+            float: right;
+            margin-top: 150px;
+            box-shadow: 10px 10px 30px 20px white, -10px -10px yellow, -20px 20px red;
+            /*
+            10px - eixo x
+            10px - eixo y
+            30px - pixels de solido para transparente
+            20px - intensidade da borda, até onde expalhar
+            */
+        }
+
+        img:hover {
+            opacity: 0.5; /*Diminui a opacidade de 0 a 1*/
+            transition: 400ms;
+        }
+
+        /*Primeiro paragrafo*/
+        main > p {
+            font-size: 20px;
+        }
+
+        /*Segundo paragrafo depois do main*/
+        main p + p {
+            /*clear: left; Cancela o left acima*/
+            background: linear-gradient(#8C1D3D 70%, black);
+            /*background: linear-gradient(10deg, #8C1D3D, black);*/
+            /*background: radial-gradient(#8C1D3D, black); !*Redondo*!*/
+            height: 210px;
+        }
+
+        /*Acessar todos os p após uma imagem*/
+        img ~ p {
+        }
+
+        /*Exclusão, o que não dor paragrafo2 eu mudo a cor*/
+        p:not(.paragrafo2) {
+            color: rgba(255, 0, 0, 0.9); /*Com RGBA que define opacidade*/
+        }
+    </style>
+</head>
+<body>
+<div>
+    <main>
+        <h2>son Goku</h2>
+        <img src="../imagens/goku.png" alt="Goku"/>
+        <p>Sobre:</p>
+        <p class="paragrafo2">
+            Mais conhecido apenas como Goku, cujo nome verdadeiro é Kakarotto (カカロット Kakarotto?) é
+            o protagonista da franquia Dragon Ball, criada por Akira Toriyama. Sua primeira aparição ocorreu no primeiro
+            capítulo do mangá Dragon Ball, intitulado Bulma e Son Goku (em japonês: ブルマと孫悟空 Buruma to Son Gokū?),
+            publicado na revista Weekly Shōnen Jump em 3 de dezembro de 1984.[3] Goku é inspirado num personagem com o
+            mesmo nome, 孫 悟空 (lê-se Sun Wukong em mandarim e Son Goku em japonês), personagem principal do romance
+            chinês Jornada ao Oeste.[4] Porém, Toriyama mudou algumas de suas características para ser mais original.
+            Goku é apresentado como um menino estranho, com rabo de macaco e força sobre-humana. Conforme a história se
+            desenrola, é revelado que ele descende de uma raça fictícia chamada Saiyajins, uma das raças mais poderosas
+            do universo.
+    </main>
+    <img src="../imagens/bulma.png" alt="Bulma" class="img-02"/>
+</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline Block</title>
+    <style>
+        body {
+            color: white;
+            background: url("../imagens/background.png"); /*Duplica até preencher toda a tela*/
+        }
+
+        h1 {
+            margin-left: 50px;
+        }
+
+        .list {
+            display: inline-block;
+            vertical-align: top; /*Alinha na parte superior*/
+            position: relative; /*Muda a partir do ponto inicial*/
+            top: 5px; /*Add mais 10 px do ponto aonde ele deveria estar*/
+            border: 1px solid white;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .img-goku {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .container {
+            background-color: cornflowerblue;
+            width: 700px;
+            height: 60px;
+            margin: 0 auto; /*Centraliza a tela e coloca uma margem default nas laterais*/
+            position: relative; /*Coloca ela na frente de uma imagem absoluta*/
+            border-radius: 5px 5px 0 0;
+        }
+
+        .container h1 {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container-heroes {
+            position: relative;
+            background-color: #8C1D3D;
+            margin: 0 auto;
+            width: 700px;
+            text-align: center;
+            border-radius: 0 0 5px 5px;
+            padding: 10px 0;
+        }
+
+        .container-heroes li {
+            display: inline-block;
+            width: 32%;
+            background-color: #8C1D3D;
+        }
+
+        .container-heroes ul {
+            margin: 0;
+            padding: 0;
+            margin-block: 0;
+            padding-inline: 0;
+        }
+
+        .container-heroes img:hover {
+            background-color: burlywood;
+        }
+
+        .container-heroes img:active {
+            background-color: #3C1D3D;
+        }
+
+        .container-heroes h2 {
+            color: #888899;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        footer span:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Dragon Ball Z</h1>
+</header>
+<main>
+    <!--Por default a lista é block-->
+    <ul class="list">
+        <li>Goku</li>
+        <li>Vegeta</li>
+        <li>Kuririn</li>
+    </ul>
+    <img src="../imagens/goku.png" alt="goku" class="img-goku" height="400"/>
+    <div class="container">
+        <h1>Heroes!</h1>
+    </div>
+    <div class="container-heroes">
+        <ul>
+            <li>
+                <h2>Vegeta</h2>
+                <img src="../imagens/vegeta.png" alt="Vegeta" height="230"/>
+            </li>
+            <li>
+                <h2>Trunks</h2>
+                <img src="../imagens/trunks.png" alt="Trunks" height="230"/>
+            </li>
+            <li>
+                <h2>Gohan</h2>
+                <img src="../imagens/gohan.png" alt="Gohan" height="230"/>
+            </li>
+        </ul>
+    </div>
+</main>
+<footer>
+    gustavocarvalho.ti@gmail.com <span>&#9829;</span>
+</footer>
+</body>
+</html>

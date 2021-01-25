@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+    <style>
+        body {
+            background: black;
+        }
+
+        .container {
+            height: 300px;
+            width: 70%;
+            padding: 150px;
+        }
+
+        .send {
+            width: 150px;
+            height: 100px;
+            background: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .send:hover {
+            transition: 2s; /*Tempo que leva*/
+            /*transform: scale(1.2); !*Aumenta 20%*!*/
+            /*transform: rotate(30deg); !*Roda 30 graus*!*/
+            transform: scale(1.2) rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button class="send">Enviar</button>
+</div>
+</body>
+</html>
