@@ -1,4 +1,4 @@
-# Curiosidades sobre HTML5(Versão 5) e CSS3(Versão 3)
+# HTML5 (Versão 5 - 2015) e CSS3 (Versão 3 - 2012)
 
 ## Tags que nunca lembro.
 
