@@ -19,7 +19,7 @@ text-transform: uppercase;
 font-weight: bold;
 text-decoration: none;          <- Remove sublinhado link
 box-sizing: border-box;         <- Para utilizar o espaçamento definitivo
-background: url("../imagens/background.png");   <- Duplica até preencher toda a tela
+background: url("./imagens/background.png");   <- Duplica até preencher toda a tela
 ````
 
 ## Outras dicas.

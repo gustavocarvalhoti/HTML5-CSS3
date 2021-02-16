@@ -1,0 +1,49 @@
+div {
+    width: 100px;
+    height: 100px;
+    /*
+    Para deixar o texto centralizado na div
+    podemos colocar um line-height igual à altura dela.
+    Só funciona bem se o texto tiver uma linha só.
+    */
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container {
+    display: inline-block;
+    width: 400px;
+}
+
+.primeiro {
+    background-color: red;
+}
+
+.segundo {
+    background-color: blue;
+}
+
+.terceiro {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    background-color: green;
+    float: right;
+}
+
+.quarto {
+    background-color: orange;
+}
+
+.quinto {
+    background-color: magenta;
+}
+
+.primeiro, .segundo, .quinto {
+    float: left;
+}
+
+.quarto {
+    float: right;
+}
