@@ -457,3 +457,5 @@ img {
 https://unicode-table.com/pt/ <br/>
 http://mobileinputtypes.com/ <br/>
 https://fonts.google.com/ <br/>
+https://blog.alura.com.br/criando-componentes-css-com-padrao-bem/ <br/>
+https://cssgridgarden.com/ <br/>
